@@ -27,16 +27,17 @@ int main(void) {
 				index = j;
 			}
 		}
-		// j반복문이 다 돌고 나서, swap하기 위해 temp 변수에 array[i]를 넣는다.
+		// j반복문이 다 돌고 나서, swap하기 위해 temp 변수에 기존 배열 array[i]를 넣는다.
 		temp = array[i];
 
-		// 진짜 array[i]에 j반복문에서 찾은 array[index]를 넣는다.
-		// array를 재배열하는 것
+		// 재배열하고 싶은 array[i]에 j반복문에서 찾은 최소값 (기존배열)array[index]를 넣는다.
 		array[i] = array[index];
 
+		// 아까 최소값을 찾았던 빈 상태가 된 배열 인덱스에 방금 바꾸면서 자리를 잃어버린 기존의 배열원소(temp)를 넣어준다.
 		array[index] = temp;
 
 	}
+	// 배열을 출력한다.
 	for (i = 0; i < max; i++) {
 		printf("%d ", array[i]);
 	}
