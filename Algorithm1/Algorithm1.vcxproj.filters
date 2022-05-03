@@ -15,7 +15,10 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="stack01.c">
+    <ClCompile Include="selectionsort.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="selectionsort1.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>

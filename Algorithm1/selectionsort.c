@@ -1,7 +1,7 @@
 #include <stdio.h>
 #define max 10
 
-int main1(void) {
+int main_1(void) {
 
 	// 사용할 변수를 선언한다.
 	int i, j, min, index, temp;
